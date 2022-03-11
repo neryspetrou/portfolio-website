@@ -1,0 +1,105 @@
+/*
+Colors used:
+Black: #020202
+Grey: #181818
+Yellow: #F6E71D
+Mustard: #F5D10D
+White: #FFFFFF
+*/
+body {
+    background-color: #181818;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 16px;
+    font-weight: 300; 
+    line-height: 1.6; 
+    color: #FFFFFF;
+  }
+  
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  a:focus,
+  a:hover {
+    color: #F5D10D;
+    font-weight: 700; 
+  }
+
+  a:visited { 
+    color: #FFFFFF;
+  }
+
+  a:active { 
+    color: #F5D10D;
+  }
+
+  .button{
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color:transparent;
+    color: #ffffff; /* needed to override the default link color */
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 50px;
+    transition: 0.2s opacity;
+    opacity: 1;
+  }
+
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    color:#020202;
+    background-color: #FFFFFF;
+
+  }
+  .button.contact{
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #020202;
+    color: #ffffff; /* needed to override the default link color */
+    border-color: #020202;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px ;
+    border-radius: 50px;
+    transition: 0.2s opacity;
+    opacity: 1;
+  }
+  .button.contact:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    background-color:#F5D10D;
+    color:#020202;
+  }
+
+  .logo{
+      max-width: 60px;
+      height: auto;
+  }
