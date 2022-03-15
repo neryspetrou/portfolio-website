@@ -6,6 +6,11 @@ Yellow: #F6E71D
 Mustard: #F5D10D
 White: #FFFFFF
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: #181818;
     font-family: 'Merriweather', sans-serif;
@@ -48,18 +53,18 @@ body {
     font-weight: 700;
   }
 
-  a:focus,
-  a:hover {
-    color: #F5D10D;
-    font-weight: 700; 
-  }
-
   a:visited { 
     color: #FFFFFF;
   }
 
   a:active { 
     color: #F5D10D;
+  }
+
+  a:focus,
+  a:hover {
+    color: #F5D10D;
+    font-weight: 700; 
   }
 
   .button{
@@ -103,3 +108,64 @@ body {
       max-width: 60px;
       height: auto;
   }
+
+  header {
+    background-color: #020202;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 0px;
+    position: fixed
+  }
+
+  /* Layout styling */
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 100px 0; /* 25px top and bottom, 0 left and right */
+  }
+
+  #hero {
+    text-align: center; /* Centers text */
+  }
+
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  nav > ul > li > a:active {
+    color: #F5D10D;
+  }
+
+  main {
+    padding-top: 150px;
+  }
+
+.socials {
+  max-width: 50px;  
+  max-height: 50px;
+}
+
+
+footer > div > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-height: 50px;
+  margin: 10 0px;
+}
