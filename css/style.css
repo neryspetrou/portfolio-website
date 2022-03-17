@@ -114,7 +114,10 @@ body {
     text-align: center;
     padding-top: 25px;
     margin-top: 0px;
-    position: fixed
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
   }
 
   /* Layout styling */
