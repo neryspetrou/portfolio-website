@@ -89,14 +89,15 @@ body {
   }
   .button.contact{
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #020202;
-    color: #ffffff; /* needed to override the default link color */
+    background-color: #FFFFFF;
+    color: #020202; /* needed to override the default link color */
     border-color: #020202;
     font-weight: 700;
     padding: 10px 20px 10px 20px ;
     border-radius: 50px;
     transition: 0.2s opacity;
     opacity: 1;
+    margin-top: 40px;
   }
   .button.contact:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -128,10 +129,12 @@ body {
 
   .row {
     margin: 100px 0; /* 25px top and bottom, 0 left and right */
+    padding: 0 15px;
   }
 
   #hero {
     text-align: center; /* Centers text */
+    margin-bottom: 100px;
   }
 
 
@@ -159,14 +162,38 @@ body {
     padding-top: 150px;
   }
 
-.socials {
-  max-width: 50px;  
-  max-height: 50px;
-}
+  .about{
+    text-align:center;
+  }
+  
+
+  .about img{
+    height: 300px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+
 
 
 footer {
   text-align: center;
+  background-color: #020202;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.social-icons{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.social-icons svg{
+   fill: #FFFFFF;
+   width: 42px;
+   height: auto;
+   margin: 0 20px;
+
 }
 
 @media only screen and (min-width: 640px) {
@@ -184,57 +211,34 @@ footer {
   .col-md-6 {
     width: 50%;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .col-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
   .col-7 {width: 58.33%;}
 }
 
 @media only screen and (min-width: 1440px) {
   .col-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
   .col-7 {width: 58.33%;}
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
