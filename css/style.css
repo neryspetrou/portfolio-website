@@ -122,6 +122,58 @@ body {
   }
 
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+ 
+.navtoggle.responsive li  {
+  display: block;
+}    
+  
+    
+ .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid rgb(79, 122, 165);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+    
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+      color: #4a4a4a;
+}
+
+nav > ul > li > a:hover {
+ color:#868B96 
+}
+
+
 
   /* Layout styling */
 
@@ -143,41 +195,6 @@ body {
   nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
-  }
-  
-  .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-    color:#FFFFFF
-  }
-  .navtoggle.responsive li  {
-    display: block;
-  }    
-    
-      
-   .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-  
-  
-  .navtoggle.responsive li  {
-    display: block;
-    padding: 12px 0;
-    border-top: 1px solid rgb(79, 122, 165);
-  }
-  
-  .navtoggle.responsive li:last-child  {
-    padding: 0 0 10px;
   }
 
   nav > ul > li {
@@ -239,17 +256,14 @@ footer {
     padding: 20px 0 13px;
   }
 
-  .logo{
-    max-width: 60px;
-    height: auto;
-} 
-
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 0px;
   }
-          
+    
+    
+        
  .navtoggle.responsive nav {
   padding: 0px 0 0;
 }
@@ -260,23 +274,44 @@ footer {
  margin: 1em 0;
 }
     
-nav > ul > li {
-display: inline-block;
+
+
+    
+   nav > ul > li {
+  display: inline-block;
        
 } 
     
-  .navtoggle.responsive li  {
+     .navtoggle.responsive li  {
    padding:0px 0;
-  
+  border-top: 0px solid rgb(79, 122, 165);
 }
     
-  .navtoggle li:not(:last-child) {
+    .navtoggle li:not(:last-child) {
   display: inline-block;
 }
     
-  .navtoggle li:last-child {
+    .navtoggle li:last-child {
   display: none;
-   }
+}
+    
+  
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
 
   .col-md-6 {
     width: 50%;
